@@ -1,0 +1,50 @@
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="design.css">
+	<script type="text/javascript" src="JScript.js"></script>
+</head>
+<body>
+<center>
+<div class="body">
+	<form name="calc">
+				<input type="text"  disabled="true" name="display" class="lcd" id="monitor" value="0" />
+		<div class="groupButton">
+		<table>
+			<tr>
+				<td></td>
+				<td></td>
+				<td><input class="btn_del" type="button" value="Del"  onclick="Delete()"/></td>
+				<td><input class="btn" type="button" value="C"  onclick="Clear()"/></td>
+			</tr>
+			<tr>
+				<td><input class="btn" type="button" value="7" 	 onclick="putValue( value )"/></td>
+				<td><input class="btn" type="button" value="8"   onclick="putValue( value )"/></td>
+				<td><input class="btn" type="button" value="9"   onclick="putValue( value )"/></td>
+				<td><input class="btn" type="button" value="/"   onclick="getOperator( value )"/></td>
+			</tr>
+			<tr>
+				<td><input class="btn" type="button" value="4"   onclick="putValue( value )"/></td>
+				<td><input class="btn" type="button" value="5"   onclick="putValue( value )"/></td>
+				<td><input class="btn" type="button" value="6"   onclick="putValue( value )"/></td>
+				<td><input class="btn" type="button" value="*"   onclick="getOperator( value )"/></td>
+			</tr>
+			<tr>
+				<td><input class="btn" type="button" value="1"   onclick="putValue( value )"/></td>
+				<td><input class="btn" type="button" value="2"   onclick="putValue( value )"/></td>
+				<td><input class="btn" type="button" value="3"   onclick="putValue( value )"/></td>
+				<td><input class="btn" type="button" value="-"   onclick="getOperator( value )"/></td>
+			</tr>
+			<tr>
+				<td><input class="btn" type="button" value="0"   onclick="putValue( value )"/></td>
+				<td><input class="btn" type="button" value="."   onclick="putValue( value )"/></td>
+				<td><input class="btn" type="button" value="="   onclick="getEqual()"/></td>
+				<td><input class="btn" type="button" value="+"   onclick="getOperator( value )"/></td>
+			</tr>
+		</table>
+		</div>
+	</form>
+</div>
+	</center>
+</body>
+</html>
